@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzo AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dzo AI</h1>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">
+                <p>Zdravo! Kako mogu da ti pomognem? Možeš me pitati kada zvoni, koji je sledeći čas ili gde je određena učionica.</p>
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" id="userInput" placeholder="Unesi svoje pitanje..." onkeypress="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">Pošalji</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
